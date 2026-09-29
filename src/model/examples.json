@@ -1,0 +1,38 @@
+[
+  {
+    "cowTag": "C0002",
+    "milkTemperature": 35.68,
+    "ph": 6.46,
+    "label": 0
+  },
+  {
+    "cowTag": "C0005",
+    "milkTemperature": 35.46,
+    "ph": 6.56,
+    "label": 0
+  },
+  {
+    "cowTag": "C0021",
+    "milkTemperature": 35.56,
+    "ph": 6.65,
+    "label": 0
+  },
+  {
+    "cowTag": "C0015",
+    "milkTemperature": 37.88,
+    "ph": 7.03,
+    "label": 1
+  },
+  {
+    "cowTag": "C0035",
+    "milkTemperature": 38.04,
+    "ph": 7.21,
+    "label": 1
+  },
+  {
+    "cowTag": "C0060",
+    "milkTemperature": 38.45,
+    "ph": 7.3,
+    "label": 1
+  }
+]

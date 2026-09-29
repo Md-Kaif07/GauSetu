@@ -1,0 +1,142 @@
+{
+  "modelVersion": "xgb-milk-2f-v1",
+  "datasetFile": "cow_milk_mastitis_dataset.csv",
+  "datasetSha256": "8c642a1a4ebd559b2ba2b5e704a1e38f3972572c3c4f15ca151808820e71484d",
+  "rows": 800,
+  "classCounts": {
+    "0": 631,
+    "1": 169
+  },
+  "features": [
+    {
+      "datasetName": "Milk_Temperature",
+      "key": "milkTemperature",
+      "unit": "\u00b0C",
+      "min": 34.040000915527344,
+      "max": 39.380001068115234
+    },
+    {
+      "datasetName": "Milk_pH",
+      "key": "ph",
+      "unit": "pH",
+      "min": 6.349999904632568,
+      "max": 7.420000076293945
+    }
+  ],
+  "target": "class1",
+  "labelAssumption": "0 = negative and 1 = mastitis-positive; semantic labels are assumed, not documented in the source CSV.",
+  "split": {
+    "training": 480,
+    "validation": 160,
+    "finalTraining": 640,
+    "test": 160,
+    "method": "StratifiedGroupKFold: identical feature pairs grouped; 5-fold outer first split, 4-fold inner first split. All Cow_IDs unique. Seeds 42/43."
+  },
+  "testClassCounts": {
+    "0": 126,
+    "1": 34
+  },
+  "selectedParameters": {
+    "objective": "binary:logistic",
+    "eval_metric": "logloss",
+    "tree_method": "hist",
+    "n_jobs": 1,
+    "random_state": 42,
+    "subsample": 1.0,
+    "colsample_bytree": 1.0,
+    "reg_lambda": 5.0,
+    "min_child_weight": 3.0,
+    "base_score": 0.5,
+    "max_depth": 2,
+    "n_estimators": 80,
+    "learning_rate": 0.08
+  },
+  "candidates": [
+    {
+      "max_depth": 2,
+      "n_estimators": 40,
+      "learning_rate": 0.08,
+      "validation_log_loss": 0.03827869461453245,
+      "validation_auc": 1.0
+    },
+    {
+      "max_depth": 2,
+      "n_estimators": 80,
+      "learning_rate": 0.08,
+      "validation_log_loss": 0.01235330755482134,
+      "validation_auc": 1.0
+    },
+    {
+      "max_depth": 2,
+      "n_estimators": 120,
+      "learning_rate": 0.08,
+      "validation_log_loss": 0.01242283990303544,
+      "validation_auc": 1.0
+    },
+    {
+      "max_depth": 3,
+      "n_estimators": 40,
+      "learning_rate": 0.08,
+      "validation_log_loss": 0.03827869461453245,
+      "validation_auc": 1.0
+    },
+    {
+      "max_depth": 3,
+      "n_estimators": 80,
+      "learning_rate": 0.08,
+      "validation_log_loss": 0.01235330755482134,
+      "validation_auc": 1.0
+    },
+    {
+      "max_depth": 3,
+      "n_estimators": 120,
+      "learning_rate": 0.08,
+      "validation_log_loss": 0.01242283990303544,
+      "validation_auc": 1.0
+    }
+  ],
+  "metrics": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "roc_auc": 0.9999999999999999,
+    "average_precision": 1.0,
+    "log_loss": 0.010270876311901416,
+    "brier_score": 0.00024212260905187577,
+    "confusion_matrix": [
+      [
+        126,
+        0
+      ],
+      [
+        0,
+        34
+      ]
+    ],
+    "accuracy_wilson_95": [
+      0.9765529633499672,
+      1.0
+    ]
+  },
+  "majorityBaselineAccuracy": 0.7875,
+  "featureImportanceGainNormalized": {
+    "Milk_Temperature": 0.7842661142349243,
+    "Milk_pH": 0.21573393046855927
+  },
+  "versions": {
+    "python": "3.12.14",
+    "xgboost": "3.4.1",
+    "scikit-learn": "1.8.0",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3"
+  },
+  "limitations": [
+    "Source provenance and veterinary label validation are unknown.",
+    "Two matching sensors only; body temperature, accelerometer and TDS absent from training data.",
+    "No conversion from TDS to conductivity is performed.",
+    "Single-source held-out test; not external clinical validation.",
+    "Probabilities are uncalibrated model scores.",
+    "Milk temperature and pH are strongly separated by class in this file; field performance may differ."
+  ]
+}

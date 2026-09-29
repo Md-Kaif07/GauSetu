@@ -1,0 +1,28 @@
+GAUSETU + TRAINED XGBOOST
+=======================
+
+1. Extract the whole ZIP.
+2. Install Node.js 20.19 or newer if needed.
+3. Windows: double-click START-WINDOWS.bat.
+4. Open http://localhost:4173 and click Open demo workspace.
+
+Mac/Linux: sh START-MAC-LINUX.sh
+Manual launch: node scripts/serve.mjs
+Keep the terminal open. If the browser opens too early, refresh it.
+
+PREDICTION
+Select a cow > Live monitoring > Record reading.
+Enter milk temperature (degrees Celsius) and milk pH, then save.
+Open Mastitis analysis > Run XGBoost prediction.
+The result comes from a trained model, not fixed demo numbers.
+
+Only milk temperature and pH are present in both your hardware list
+and dataset. Cow temperature, accelerometer, and TDS are monitored
+but are NOT used by the model. TDS is not treated as conductivity.
+
+The app needs no Python or API key for prediction.
+Python is only needed to retrain the included model.
+
+The model has not been clinically validated. Sample farm readings
+are synthetic. Physical sensors are not automatically connected.
+Read README.md and docs/MODEL-CARD.md for details.

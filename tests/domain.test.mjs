@@ -1,0 +1,13 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {seedData} from '../src/data.mjs';
+import {farmSummary,latest,predictionFor,runModelAnalysis,validateCow,validateReading,validateBackup,csv,assistantReply} from '../src/domain.mjs';
+test('source fixtures are internally consistent and farm-scoped',()=>{const s=seedData();assert.equal(farmSummary(s,'farm-1').cows.length,6);assert.equal(farmSummary(s,'farm-2').cows.length,3);assert.equal(farmSummary(s,'farm-1').milk.toFixed(1),'56.6');assert.equal(farmSummary(s,'farm-1').high,2);assert.doesNotThrow(()=>validateBackup(s));});
+test('duplicate cow tags only rejected inside same farm',()=>{const s=seedData(),c=s.cows[0];assert.match(validateCow(c,s.cows),/already exists/);assert.equal(validateCow(c,s.cows,c.id),'');assert.equal(validateCow({...c,farmId:'new-farm'},s.cows),'');});
+test('latest reading uses timestamp, not array order',()=>{const s=seedData();s.readings.reverse();assert.equal(latest(s,s.cows[0].id).milkYield,8.2);});
+test('trained analysis snapshots selected cow and isolates alerts by farm',()=>{const s=seedData(),id=s.cows[0].id,next=runModelAnalysis(s,id);assert.equal(predictionFor(next,id).predictedClass,1);assert.equal(predictionFor(next,id).inputs.cowId,id);assert.equal(next.alerts.length,s.alerts.length+1);assert.equal(farmSummary(next,'farm-2').alerts.length,farmSummary(s,'farm-2').alerts.length);});
+test('analysis refuses missing readings',()=>assert.throws(()=>runModelAnalysis(seedData(),'missing'),/Record/));
+test('optional sensors remain missing but invalid values are rejected',()=>{const r=seedData().readings[0];assert.equal(validateReading(r),'');assert.equal(validateReading({...r,ax:null}),'');for(const ph of [NaN,15,-1])assert.ok(validateReading({...r,ph}));});
+test('backup validation rejects broken references, shapes, duplicates, and values',()=>{for(const mutate of [s=>s.cows[0].farmId='missing',s=>s.cows[0].name=null,s=>s.predictions[0].riskPercent=101,s=>s.devices[0].status='oops',s=>s.alerts[0].message={},s=>s.cows.push(s.cows[0]),s=>s.readings[0].ph=20,s=>s.settings=null]){const s=seedData();mutate(s);assert.throws(()=>validateBackup(s));}});
+test('CSV escapes values and neutralizes spreadsheet formulas',()=>{assert.equal(csv([['a,b','a"b','=1+1']]),'"a,b","a""b","\'=1+1"');});
+test('assistant uses updated selected-farm totals',()=>{const s=seedData();assert.match(assistantReply('milk',s,'farm-1'),/56.6/);assert.match(assistantReply('Gauri',s,'farm-1'),/8.2 L/);assert.doesNotMatch(assistantReply('milk',s,'farm-2'),/56.6/);});

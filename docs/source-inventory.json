@@ -1,0 +1,326 @@
+[
+  {
+    "project": "mastitis-app-source-code",
+    "path": "LICENSE",
+    "bytes": 1127,
+    "sha256": "b73819c20d04c6a048933ff72a703eb616f23f8d7a72e0ca4852d25d2d556316"
+  },
+  {
+    "project": "mastitis-app-source-code",
+    "path": "App.js",
+    "bytes": 7157,
+    "sha256": "f408c7361b505dc3fa585620a3edf882fcd03ff9c9b67cb6d65c6b83e862fd86"
+  },
+  {
+    "project": "mastitis-app-source-code",
+    "path": "CLAUDE.md",
+    "bytes": 12,
+    "sha256": "d631d88045f74623d568adfb4783b72e3d1b732330d749bc6c72e6648d4581d3"
+  },
+  {
+    "project": "mastitis-app-source-code",
+    "path": "AGENTS.md",
+    "bytes": 121,
+    "sha256": "86c66ddb4342729c93d938b0f1191c25943048fc5224a1c168d56b6a1b430e1d"
+  },
+  {
+    "project": "mastitis-app-source-code",
+    "path": "index.js",
+    "bytes": 315,
+    "sha256": "eeb521c7e92449108273176e095741230773d345d528455c1f70cf7f2e9c7ee1"
+  },
+  {
+    "project": "mastitis-app-source-code",
+    "path": "app.json",
+    "bytes": 684,
+    "sha256": "1a5d5ae2584692988a93e85382f24fa24477fd094042993b75361a67578d5231"
+  },
+  {
+    "project": "mastitis-app-source-code",
+    "path": "package.json",
+    "bytes": 1015,
+    "sha256": "6561e4f2b0d67e08b1eb14c6f234e4d3795d6c374a9116b633095f538eebc042"
+  },
+  {
+    "project": "mastitis-app-source-code",
+    "path": ".gitignore",
+    "bytes": 481,
+    "sha256": "e251834bb25ee532544443f249277daffe44e9eab5e7c65d34a5bd8cdd1fa683"
+  },
+  {
+    "project": "mastitis-app-source-code",
+    "path": "package-lock.json",
+    "bytes": 262924,
+    "sha256": "583b86cd4801094668d149ee351f920c0cdee3cfc8586bc784f178e642dc4374"
+  },
+  {
+    "project": "mastitis-app-source-code",
+    "path": "assets/icon.png",
+    "bytes": 393493,
+    "sha256": "119462bb78eb240a65c869fc067ee599639b3cb5a41953f25c07b17d2a8c7e0f"
+  },
+  {
+    "project": "mastitis-app-source-code",
+    "path": "assets/splash-icon.png",
+    "bytes": 17547,
+    "sha256": "5f4c0a732b6325bf4071d9124d2ae67e037cb24fcc9c482ef82bea742109a3b8"
+  },
+  {
+    "project": "mastitis-app-source-code",
+    "path": "assets/logo.jpg",
+    "bytes": 49996,
+    "sha256": "553156eec36b985f4a9bf9dac39013815c0e02100632548d658b008908b9453e"
+  },
+  {
+    "project": "mastitis-app-source-code",
+    "path": "assets/favicon.png",
+    "bytes": 1129,
+    "sha256": "a4e030697a7571b3e95d31860e4da55d2f98e5e861e2b55e414f45a8556828ba"
+  },
+  {
+    "project": "mastitis-app-source-code",
+    "path": "assets/android-icon-foreground.png",
+    "bytes": 78796,
+    "sha256": "9e3d0315a33c6799de601dd34cd8bf8cc3a8d16f3bf75592baec2ceb7240b391"
+  },
+  {
+    "project": "mastitis-app-source-code",
+    "path": "assets/android-icon-background.png",
+    "bytes": 17549,
+    "sha256": "fb139c2dee362ebf2070e23b96da6fc0d43f8492de38b8af1fd7223e19b5861d"
+  },
+  {
+    "project": "mastitis-app-source-code",
+    "path": "assets/android-icon-monochrome.png",
+    "bytes": 4140,
+    "sha256": "6371fc2c12e33ad2215a86c281db3d682a81bebe7c957a842c13b8bf00cceb83"
+  },
+  {
+    "project": "mastitis-app-source-code",
+    "path": "assets/login_hero.jpg",
+    "bytes": 655846,
+    "sha256": "7c127700eb0e3fa95642c4ca98edcb3c1e8198f36ab7c2168bd47269efa182b5"
+  },
+  {
+    "project": "mastitis-app-source-code",
+    "path": "src/screens/HistoryScreen.js",
+    "bytes": 12568,
+    "sha256": "ae8f6d6fcf9c549b3a176db84475232681fb151ca24a7375bda822bb4bddf828"
+  },
+  {
+    "project": "mastitis-app-source-code",
+    "path": "src/screens/LoginScreen.js",
+    "bytes": 17383,
+    "sha256": "9f2c0019995a7b0af20c92c3e37d756c4645f5271a45a2736886861cbf46e481"
+  },
+  {
+    "project": "mastitis-app-source-code",
+    "path": "src/screens/SettingsScreen.js",
+    "bytes": 18621,
+    "sha256": "0271e6faabc9a18d1da537dae81edd0dec41232e86470e0c4beb635400f809be"
+  },
+  {
+    "project": "mastitis-app-source-code",
+    "path": "src/screens/AlertScreen.js",
+    "bytes": 18762,
+    "sha256": "54fe282bb4d402737a03bfa106dd5ffc55c5155c489731f996649e3dc3ff4059"
+  },
+  {
+    "project": "mastitis-app-source-code",
+    "path": "src/screens/HomeScreen.js",
+    "bytes": 24105,
+    "sha256": "4f8a4be6aee88f6106510fb15237981ffe4537e44ae55194287fef0f3721f7fa"
+  },
+  {
+    "project": "mastitis-app-source-code",
+    "path": "src/screens/AIResultScreen.js",
+    "bytes": 9791,
+    "sha256": "b17425f6815cd12951ca9512797489259e328a535efcff8ff285b09bf87187d0"
+  },
+  {
+    "project": "mastitis-app-source-code",
+    "path": "src/screens/ProfileScreen.js",
+    "bytes": 8804,
+    "sha256": "01c9fe4af58a8c0301a163df21e4043cd19ab18333dba8dfcbcb4400ecb91490"
+  },
+  {
+    "project": "mastitis-app-source-code",
+    "path": "src/screens/LiveMonitoringScreen.js",
+    "bytes": 17666,
+    "sha256": "c8253d8f7cf0dc6ef5aca499fbb274ba3d59b45a45159f4192b68827aaebb093"
+  },
+  {
+    "project": "mastitis-app-source-code",
+    "path": "src/components/VoiceAssistantModal.js",
+    "bytes": 17471,
+    "sha256": "85aee56ed7675e666f815728494f42fdf0b1cd2d1bc4474226028ab416afde6a"
+  },
+  {
+    "project": "mastitis-app-source-code",
+    "path": "src/components/CustomTabBar.js",
+    "bytes": 5766,
+    "sha256": "5550d770cbfedc034a0bbea22290b51fcd67b8cbffbd13cf41190034db48fe92"
+  },
+  {
+    "project": "mastitis-app-source-code",
+    "path": "src/theme/colors.js",
+    "bytes": 4629,
+    "sha256": "f546b7ee5ec86e366712d913800a519d5eb1e0f9989cbdb0675b5e5ab84bb034"
+  },
+  {
+    "project": "mastitis-app-source-code",
+    "path": "src/context/ScrollContext.js",
+    "bytes": 582,
+    "sha256": "e199415892abcfd56e588b5133d5c05969915923d2b6913209a230862738600f"
+  },
+  {
+    "project": "mastitis-app-source-code",
+    "path": "src/context/LanguageContext.js",
+    "bytes": 7813,
+    "sha256": "fed5f73831335c7f62d3db59aa4052f3d7d487e259a949a6eb74e058c31373c1"
+  },
+  {
+    "project": "mastitis-app-source-code",
+    "path": "src/context/AlertContext.js",
+    "bytes": 520,
+    "sha256": "7acbb4e6210ef7a3af46e424ff573aa1a9febbd3675279081e918d0571584823"
+  },
+  {
+    "project": "mastitis-app-source-code",
+    "path": "src/context/AuthContext.js",
+    "bytes": 741,
+    "sha256": "1b065a6903b0f2b437c6de71490d9b5d15ebe6ecddb55872134279ee2457376a"
+  },
+  {
+    "project": "mastitis-app-source-code",
+    "path": "src/context/ThemeContext.js",
+    "bytes": 627,
+    "sha256": "96599dac07219d63007303e71a771d3e3b6bcee1b0a9bfa4408de0da145fd0e1"
+  },
+  {
+    "project": "mastitis-app-source-code",
+    "path": "src/prediction/mockPrediction.js",
+    "bytes": 3303,
+    "sha256": "4186617ffcc944a4b6102db458b20d46c7c34b81b48573c46a97f6e39f2eb77a"
+  },
+  {
+    "project": "mastitis-app-source-code",
+    "path": "src/prediction/PredictionComponents.js",
+    "bytes": 32906,
+    "sha256": "17e2e1bfa25737e7e5a169d65526cf14984b9ae6bfdcd24c2d6e8689c3ed7b82"
+  },
+  {
+    "project": "gauSetu-dashboard",
+    "path": "vite.config.js",
+    "bytes": 161,
+    "sha256": "e1eefd0ed1639c88d1213884ef760516884db9e168190e223fee6b063ad3e088"
+  },
+  {
+    "project": "gauSetu-dashboard",
+    "path": "README.md",
+    "bytes": 1009,
+    "sha256": "1f8fa46483b514305f44e34a47e85e88428c3a667c9494e1583628ef18d7bc79"
+  },
+  {
+    "project": "gauSetu-dashboard",
+    "path": "package.json",
+    "bytes": 454,
+    "sha256": "7261309a6152ccbe5c74d7c5f1c554716be363e7b035456da4b5853fb26284b7"
+  },
+  {
+    "project": "gauSetu-dashboard",
+    "path": ".gitignore",
+    "bytes": 253,
+    "sha256": "fe718e7babb14f3cbad2d97f08889b9ce5215ed3fe0e43b2b8cfbfb3b9b844e8"
+  },
+  {
+    "project": "gauSetu-dashboard",
+    "path": "index.html",
+    "bytes": 355,
+    "sha256": "037c414421e5b9dc70fd25d9048e4a474b622e6e1e5aed5c3bae5f6e7157f95d"
+  },
+  {
+    "project": "gauSetu-dashboard",
+    "path": "gausetu-logo.png",
+    "bytes": 1284484,
+    "sha256": "fbcf6e582dd04cb64ddd8107cdfec4f73fffafcfbd0fce826f954ec5803329c3"
+  },
+  {
+    "project": "gauSetu-dashboard",
+    "path": ".oxlintrc.json",
+    "bytes": 231,
+    "sha256": "1be899e45c49b2a2edc715bc3bfb31d8ed8e866ed7ebab2065ff6e55e88c2396"
+  },
+  {
+    "project": "gauSetu-dashboard",
+    "path": "package-lock.json",
+    "bytes": 40939,
+    "sha256": "c29b97cec9c90dd0c9b0893ad8a81acb86c8917ae9d21631e8145217bf954a88"
+  },
+  {
+    "project": "gauSetu-dashboard",
+    "path": "src/App.css",
+    "bytes": 165788,
+    "sha256": "10def474d1fd64e00478cbcb1791478f7661f560c120fddfa3c27b75f26b9c59"
+  },
+  {
+    "project": "gauSetu-dashboard",
+    "path": "src/index.css",
+    "bytes": 2169,
+    "sha256": "fda85fffe7f006d822fb9ab4e774b9e2b8fadffa73a3806b038dc0b8456cbbeb"
+  },
+  {
+    "project": "gauSetu-dashboard",
+    "path": "src/App.jsx",
+    "bytes": 133955,
+    "sha256": "ca7d73173f3672e72ec98a6e96056513b3a7983c8c1e67c80af3534c259cf980"
+  },
+  {
+    "project": "gauSetu-dashboard",
+    "path": "src/main.jsx",
+    "bytes": 229,
+    "sha256": "4b4b864dbe45253425d0c925337180ec07e204295179f80f59551216f466f618"
+  },
+  {
+    "project": "gauSetu-dashboard",
+    "path": "public/icons.svg",
+    "bytes": 5031,
+    "sha256": "b45fa506195cfcdef406ba9f0c77b36ddc1a7c224040926ec70abc2fdea7b93a"
+  },
+  {
+    "project": "gauSetu-dashboard",
+    "path": "public/gausetu-logo.png",
+    "bytes": 1284484,
+    "sha256": "fbcf6e582dd04cb64ddd8107cdfec4f73fffafcfbd0fce826f954ec5803329c3"
+  },
+  {
+    "project": "gauSetu-dashboard",
+    "path": "public/favicon.svg",
+    "bytes": 9522,
+    "sha256": "61bc9a161de58248288e6905425d7180f0624c2865007b97d763fdac12043a66"
+  },
+  {
+    "project": "gauSetu-dashboard",
+    "path": "src/assets/react.svg",
+    "bytes": 4126,
+    "sha256": "35ef61ed53b323ae94a16a8ec659b3d0af3880698791133f23b084085ab1c2e5"
+  },
+  {
+    "project": "gauSetu-dashboard",
+    "path": "src/assets/hero.png",
+    "bytes": 13057,
+    "sha256": "881ffbcaafc212e49addad08846a5b82761355fa20624253af3477ba33262c5c"
+  },
+  {
+    "project": "gauSetu-dashboard",
+    "path": "src/assets/vite.svg",
+    "bytes": 8709,
+    "sha256": "5be21acd42eb7b896e517f4e0f0f11eb5c5d9e54fbbcebe9453f033008fcca6f"
+  },
+  {
+    "project": "XGBoost dataset upload",
+    "path": "cow_milk_mastitis_dataset (1)(1).csv",
+    "bytes": 29826,
+    "sha256": "8c642a1a4ebd559b2ba2b5e704a1e38f3972572c3c4f15ca151808820e71484d"
+  }
+]

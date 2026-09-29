@@ -1,0 +1,16 @@
+{
+  "cowTag": "012",
+  "timestamp": "2026-09-26T12:00:00Z",
+  "values": {
+    "cowTemperature": 38.5,
+    "ax": 0.02,
+    "ay": 0.01,
+    "az": 0.98,
+    "milkTemperature": 35.50,
+    "ph": 6.60,
+    "tds": 480,
+    "activity": "Not assessed",
+    "milkYield": null,
+    "conductivity": null
+  }
+}
