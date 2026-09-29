@@ -27,13 +27,13 @@ Try **Dataset examples** on the analysis page to evaluate two held-out CSV rows 
 
 ## Hardware and feature mapping
 
-| Hardware | Field / unit | Used for prediction? |
-|---|---|---|
-| Cow tag temperature sensor | `cowTemperature`, °C | No — absent from training CSV |
-| Cow tag accelerometer | `ax`, `ay`, `az`, g | No — absent from training CSV |
+| Hardware                         | Field / unit          | Used for prediction?             |
+| -------------------------------- | --------------------- | -------------------------------- |
+| Cow tag temperature sensor       | `cowTemperature`, °C  | No — absent from training CSV    |
+| Cow tag accelerometer            | `ax`, `ay`, `az`, g   | No — absent from training CSV    |
 | Milk analyser temperature sensor | `milkTemperature`, °C | **Yes** — CSV `Milk_Temperature` |
-| Milk analyser pH sensor | `ph` | **Yes** — CSV `Milk_pH` |
-| Milk analyser TDS sensor | `tds`, ppm | No — absent from training CSV |
+| Milk analyser pH sensor          | `ph`                  | **Yes** — CSV `Milk_pH`          |
+| Milk analyser TDS sensor         | `tds`, ppm            | No — absent from training CSV    |
 
 **TDS is not substituted for milk conductivity.** No fabricated TDS, body-temperature, or accelerometer training values were generated. Conductivity and daily milk yield remain optional reference/manual fields. Neither is a model feature. Activity is a manual observation; no accelerometer activity classifier was trained.
 
